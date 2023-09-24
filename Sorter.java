@@ -16,6 +16,9 @@ public class Sorter {
         System.out.println("selectionsort:");
         selectionSort(myList);
         System.out.println(myList);
+        System.out.println("sort(array) that calls insertion sort:");
+        sort(myList);
+        System.out.println(myList);
         
 
     }
@@ -49,9 +52,9 @@ public class Sorter {
             arr.set(indexOfmin, temp);
 
         }
+    }
 
-
-
-
+    public static void sort(ArrayList<Integer> x){
+        insertionSort(x);
     }
 }
