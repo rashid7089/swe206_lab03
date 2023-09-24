@@ -1,22 +1,20 @@
 import java.util.ArrayList;
+import java.util.List;
 
-public class Sorter {
+public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> myList=new ArrayList<>();
-        myList.add(4);
-        myList.add(8);
-        myList.add(5);
-        myList.add(1);
-        myList.add(4);
-        System.out.println("orginal List");
+        ArrayList<Integer> myList=new ArrayList<>(List.of(new Integer[]{4,8,5,1,4}));
+
+        System.out.print("Original List: ");
         System.out.println(myList);
-        System.out.println("insertionSort:");
-         insertionSort(myList);
+
+        System.out.print("Insertion Sort: ");
+        sort(myList);
         System.out.println(myList);
-        System.out.println("selectionsort:");
+
+        System.out.print("Selection Sort: ");
         selectionSort(myList);
         System.out.println(myList);
-        
 
     }
     public static void insertionSort(ArrayList<Integer> arr) {
@@ -50,8 +48,9 @@ public class Sorter {
 
         }
 
+    }
 
-
-
+    public static void sort(ArrayList<Integer> list){
+        insertionSort(list);
     }
 }
