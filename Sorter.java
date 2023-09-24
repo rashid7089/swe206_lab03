@@ -52,8 +52,6 @@ public class Main {
         }
     }
 
-    }
-
     public static void sort(ArrayList<Integer> list){
         insertionSort(list);
     }
